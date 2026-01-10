@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{JOB_TITLE}}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Job opening for {{JOB_TITLE}} at Spydy Technologies">
+
+    <!-- ===== JobPosting Schema (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "JobPosting",
+      "title": "{{JOB_TITLE}}",
+      "description": "Opening for {{JOB_TITLE}} at Spydy Technologies.",
+      "datePosted": "{{DATE}}",
+      "employmentType": "FULL_TIME",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "Spydy Technologies",
+        "sameAs": "https://spyindex.github.io/Spydy/"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        }
+      }
+    }
+    </script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      h1, h2 {
+        color: #333;
+      }
+      ul {
+        list-style: circle;
+        margin-left: 20px;
+      }
+      hr {
+        margin: 20px 0;
+      }
+    </style>
+</head>
+
+<body>
+
+<h1>{{JOB_TITLE}}</h1>
+
+<p><strong>Company:</strong> Spydy Technologies</p>
+<p><strong>Location:</strong> India (Remote)</p>
+<p><strong>Employment Type:</strong> Full-Time</p>
+<p><strong>Date Posted:</strong> {{DATE}}</p>
+
+<h2>Job Description</h2>
+<p>
+We are hiring for the position of <strong>{{JOB_TITLE}}</strong>.
+This role offers growth opportunities and hands-on experience with
+modern tools and technologies.
+</p>
+
+<p>
+<a href="mailto:hr@spydy.com"><strong>Apply Now</strong></a>
+</p>
+
+<hr>
+
+<h2>Links in this batch</h2>
+<ul>
+<!-- JOB_LINKS_PLACEHOLDER -->
+</ul>
+
+<hr>
+<p>© {{DATE}} Spydy Technologies</p>
+
+</body>
+</html>
